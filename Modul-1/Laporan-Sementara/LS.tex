@@ -1,0 +1,99 @@
+\documentclass[titlepage,11pt]{article}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{transparent} % Untuk transparansi gambar
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[bahasa]{babel}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{graphicx,tabularx,multirow}
+\usepackage{xcolor}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[
+	allcolors=visigrey,
+	colorlinks=true,
+]{hyperref}
+\usepackage[a4paper,left=2cm,right=2cm]{geometry}
+% Pengaturan kutipan artikel
+\usepackage[style=ieee, backend=biber]{biblatex}
+%Code listing style pak akok
+\definecolor{codegreen}{rgb}{0,0.6,0} 
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{eso-pic} % Untuk menambahkan elemen ke seluruh halaman
+
+\newcommand\BackgroundPic{
+  \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{
+      \vfill
+      \centering
+      \transparent{0.1}
+      \includegraphics[width=0.4\paperwidth,keepaspectratio]{b401.png}
+      \vfill
+    }
+  }
+}
+
+\newcommand\BackgroundAllPages{ \AddToShipoutPicture*{\BackgroundPic} }
+\newcommand\BackgroundNone{ \ClearShipoutPicture } % hilangkan background
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\small\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=t,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,           
+	frame = single,
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+\definecolor{visigrey}{rgb}{.1,.15,.15}
+\geometry{top=1cm,bottom=.5cm}
+\savegeometry{titlepage}
+\geometry{top=2cm,bottom=2cm}
+\savegeometry{main}
+
+\def\bspace{\(\qquad\qquad\qquad\)}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+
+\setcounter{tocdepth}{6}
+
+\def\autor{Laboratorium }
+\def\lab{Robotika dan Sistem Cerdas}
+\def\departemen{Departemen Teknik Komputer}
+\def\institut{Institut Teknologi Sepuluh Nopember}
+\def\praktikum{Laporan Sementara \\ Praktikum Sistem Mikroprosesor dan Sistem Tertanam}
+\def\nama{Nur Rahman Fauzan - 5024231069}
+% Ubah Judul sesuai dengan modul
+\def\judul{Pengantar Mikrokontroler}
+\def\tanggal{2026}
+\begin{document}
+% Ubah Bahasa sesuai dengan keinginan
+\selectlanguage{bahasa}
+
+\BackgroundNone
+\input{Cover/Header.tex}
+
+\BackgroundAllPages
+% Pilih Modul yang akan di build
+\input{P1/pengenalan.tex}
+
+\end{document}
