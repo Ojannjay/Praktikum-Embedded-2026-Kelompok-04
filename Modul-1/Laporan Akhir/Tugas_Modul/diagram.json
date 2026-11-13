@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "author": "Nur Rahman Fauzan",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn11",
+      "top": -20,
+      "left": 260,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led11",
+      "top": 230,
+      "left": 260,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r11",
+      "top": 300,
+      "left": 240,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn12",
+      "top": -20,
+      "left": 335,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led12",
+      "top": 230,
+      "left": 335,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r12",
+      "top": 300,
+      "left": 315,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn13",
+      "top": -20,
+      "left": 410,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led13",
+      "top": 230,
+      "left": 410,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r13",
+      "top": 300,
+      "left": 390,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn21",
+      "top": 55,
+      "left": 260,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led21",
+      "top": 310,
+      "left": 260,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r21",
+      "top": 380,
+      "left": 240,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn22",
+      "top": 55,
+      "left": 335,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led22",
+      "top": 310,
+      "left": 335,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r22",
+      "top": 380,
+      "left": 315,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn23",
+      "top": 55,
+      "left": 410,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led23",
+      "top": 310,
+      "left": 410,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r23",
+      "top": 380,
+      "left": 390,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn31",
+      "top": 130,
+      "left": 260,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led31",
+      "top": 390,
+      "left": 260,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r31",
+      "top": 460,
+      "left": 240,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn32",
+      "top": 130,
+      "left": 335,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led32",
+      "top": 390,
+      "left": 335,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r32",
+      "top": 460,
+      "left": 315,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn33",
+      "top": 130,
+      "left": 410,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led33",
+      "top": 390,
+      "left": 410,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r33",
+      "top": 460,
+      "left": 390,
+      "rotate": 90,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "esp:16",
+      "btn11:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn11:2.l",
+      "esp:19",
+      "green",
+      []
+    ],
+    [
+      "esp:13",
+      "r11:1",
+      "orange",
+      []
+    ],
+    [
+      "r11:2",
+      "led11:A",
+      "orange",
+      []
+    ],
+    [
+      "led11:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:16",
+      "btn12:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn12:2.l",
+      "esp:21",
+      "green",
+      []
+    ],
+    [
+      "esp:14",
+      "r12:1",
+      "orange",
+      []
+    ],
+    [
+      "r12:2",
+      "led12:A",
+      "orange",
+      []
+    ],
+    [
+      "led12:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:16",
+      "btn13:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn13:2.l",
+      "esp:22",
+      "green",
+      []
+    ],
+    [
+      "esp:25",
+      "r13:1",
+      "orange",
+      []
+    ],
+    [
+      "r13:2",
+      "led13:A",
+      "orange",
+      []
+    ],
+    [
+      "led13:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:17",
+      "btn21:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn21:2.l",
+      "esp:19",
+      "green",
+      []
+    ],
+    [
+      "esp:26",
+      "r21:1",
+      "orange",
+      []
+    ],
+    [
+      "r21:2",
+      "led21:A",
+      "orange",
+      []
+    ],
+    [
+      "led21:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:17",
+      "btn22:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn22:2.l",
+      "esp:21",
+      "green",
+      []
+    ],
+    [
+      "esp:27",
+      "r22:1",
+      "orange",
+      []
+    ],
+    [
+      "r22:2",
+      "led22:A",
+      "orange",
+      []
+    ],
+    [
+      "led22:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:17",
+      "btn23:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn23:2.l",
+      "esp:22",
+      "green",
+      []
+    ],
+    [
+      "esp:32",
+      "r23:1",
+      "orange",
+      []
+    ],
+    [
+      "r23:2",
+      "led23:A",
+      "orange",
+      []
+    ],
+    [
+      "led23:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:18",
+      "btn31:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn31:2.l",
+      "esp:19",
+      "green",
+      []
+    ],
+    [
+      "esp:33",
+      "r31:1",
+      "orange",
+      []
+    ],
+    [
+      "r31:2",
+      "led31:A",
+      "orange",
+      []
+    ],
+    [
+      "led31:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:18",
+      "btn32:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn32:2.l",
+      "esp:21",
+      "green",
+      []
+    ],
+    [
+      "esp:4",
+      "r32:1",
+      "orange",
+      []
+    ],
+    [
+      "r32:2",
+      "led32:A",
+      "orange",
+      []
+    ],
+    [
+      "led32:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:18",
+      "btn33:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn33:2.l",
+      "esp:22",
+      "green",
+      []
+    ],
+    [
+      "esp:23",
+      "r33:1",
+      "orange",
+      []
+    ],
+    [
+      "r33:2",
+      "led33:A",
+      "orange",
+      []
+    ],
+    [
+      "led33:C",
+      "esp:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
